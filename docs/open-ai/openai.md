@@ -15,26 +15,6 @@
 .
 ├── __init__.py
 ├── __main__.py
-├── __pycache__
-│   ├── __init__.cpython-39.pyc
-│   ├── __main__.cpython-39.pyc
-│   ├── _base_client.cpython-39.pyc
-│   ├── _client.cpython-39.pyc
-│   ├── _compat.cpython-39.pyc
-│   ├── _constants.cpython-39.pyc
-│   ├── _exceptions.cpython-39.pyc
-│   ├── _files.cpython-39.pyc
-│   ├── _legacy_response.cpython-39.pyc
-│   ├── _models.cpython-39.pyc
-│   ├── _module_client.cpython-39.pyc
-│   ├── _qs.cpython-39.pyc
-│   ├── _resource.cpython-39.pyc
-│   ├── _response.cpython-39.pyc
-│   ├── _streaming.cpython-39.pyc
-│   ├── _types.cpython-39.pyc
-│   ├── _version.cpython-39.pyc
-│   ├── pagination.cpython-39.pyc
-│   └── version.cpython-39.pyc
 ├── _base_client.py
 ├── _client.py
 ├── _compat.py
