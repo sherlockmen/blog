@@ -6,6 +6,7 @@
 ---
 
 > OPEN AI官方文档链接 <https://platform.openai.com/docs/overview>
+> 如果打不开的话您可能需要使用一些科技 :sweat_smile: :sweat_smile: :sweat_smile:
 
 ### 1.1 环境
 文档所使用的open ai sdk版本为1.98.0 如果后期有sdk更新的话也会及时同步
