@@ -9,7 +9,7 @@
 > 如果打不开的话您可能需要使用一些科技 :sweat_smile: :sweat_smile: :sweat_smile:
 
 ### 1.1 环境
-文档所使用的open ai sdk版本为1.98.0，同时使用的为Python版本的sdk，Java、JS等版本的如果有时间会更新，如果后期有sdk更新的话也会及时同步
+文档所使用的 `open ai sdk` 版本为 `1.98.0`，同时使用的为 `Python` 版本的sdk，Java、JS等版本的如果有时间会更新，如果后期有sdk更新的话也会及时同步
 ### 1.2 OPEN-AI-PYTHON SDK 项目目录结构树
 ```text
 .
