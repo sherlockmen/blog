@@ -13,33 +13,33 @@
 ### 1.2 OPEN-AI-PYTHON SDK 项目目录结构树
 ```text
 .
-├── __init__.py
-├── __main__.py
-├── _base_client.py
-├── _client.py
-├── _compat.py
-├── _constants.py
-├── _exceptions.py
-├── _extras
-├── _files.py
-├── _legacy_response.py
-├── _models.py
-├── _module_client.py
-├── _qs.py
-├── _resource.py
-├── _response.py
-├── _streaming.py
-├── _types.py
+├── __init__.py                         ---初始化文件
+├── __main__.py                         ---cli命令入口
+├── _base_client.py                     ---OPEN AI SDK HTTP通信核心类
+├── _client.py                          ---OPEN AI SDK 核心客户端实现
+├── _compat.py                          ---处理 Pydantic v1 和 v2 之间的兼容性
+├── _constants.py                       ---HTTP 客户端的常量
+├── _exceptions.py                      ---异常处理
+├── _files.py                           ---文件处理
+├── _legacy_response.py                 ---响应处理（过期）
+├── _models.py                          ---定义了所有 API 数据模型的基类BaseModel和相关的工具函数
+├── _module_client.py                   ---API 资源访问入口
+├── _qs.py                              ---查询字符串(querystring)处理的工具模块
+├── _resource.py                        ---封装 HTTP 方法和基础功能
+├── _response.py                        ---响应处理
+├── _streaming.py                       ---流式响应处理核心模块
+├── _types.py                           ---定义整个 SDK 中使用的各种类型别名、协议和特殊标记类
 ├── _utils
-├── _version.py
+├── _version.py                         ---版本号、SDK名称
 ├── cli
 ├── helpers
+├── _extras
 ├── lib
-├── pagination.py
+├── pagination.py                       ---分页工具
 ├── py.typed
 ├── resources
-├── types
-└── version.py
+├── types                               ---
+└── version.py                          ---公共版本访问入口
 ```
 
 
