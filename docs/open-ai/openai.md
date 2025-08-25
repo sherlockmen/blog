@@ -38,9 +38,31 @@
 ├── pagination.py                       ---分页工具
 ├── py.typed
 ├── resources
-├── types                               ---
+├── types                               ---定义类包
 └── version.py                          ---公共版本访问入口
 ```
+### 1.3 SDK方法详细分析
+这个章节主要会列举SDK中的重要的方法及使用的简单样例
+
+#### 1.3.1 Client
+![pic](../image/openai-sdk-images/client.png )
 
 
+```xmind preview 
+../file/test.xmind
+```
 
+> [!NOTE]
+> An alert of type 'note' using global style 'callout'.
+
+> [!TIP]
+> An alert of type 'tip' using global style 'callout'.
+
+> [!WARNING]
+> An alert of type 'warning' using global style 'callout'.
+
+> [!ATTENTION]
+> An alert of type 'attention' using global style 'callout'.
+
+> [!COMMENT]
+> An alert of type 'comment' using style 'callout' with default settings.

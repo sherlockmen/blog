@@ -1,0 +1,29 @@
+@startuml
+
+!theme plain
+left to right direction
+skinparam linetype ortho
+
+class object
+class node9 as "openai._base_client.AsyncAPIClient"
+class node3 as "openai._base_client.BaseClient"
+class node5 as "openai._base_client.SyncAPIClient"
+class node1 as "openai._client.AsyncOpenAI"
+class node10 as "openai._client.AsyncOpenAIWithRawResponse"
+class node4 as "openai._client.AsyncOpenAIWithStreamedResponse"
+class node8 as "openai._client.OpenAI"
+class node2 as "openai._client.OpenAIWithRawResponse"
+class node7 as "openai._client.OpenAIWithStreamedResponse"
+class node0 as "typing.Hashable"
+
+object  ^-[#595959,dashed]-  node0  
+node9   ^-[#595959,plain]-  node3  
+node3   ^-[#595959,plain]-  object 
+node5   ^-[#595959,plain]-  node3  
+node1   ^-[#595959,plain]-  node9  
+node10  ^-[#595959,plain]-  object 
+node4   ^-[#595959,plain]-  object 
+node8   ^-[#595959,plain]-  node5  
+node2   ^-[#595959,plain]-  object 
+node7   ^-[#595959,plain]-  object 
+@enduml
