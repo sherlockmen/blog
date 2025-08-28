@@ -4,4 +4,4 @@
 > 学习并做点有意思的事情
 
 [GitHub](https://github.com/sherlockmen)
-[Get Started](README.md)
+[Get Started](#blog)

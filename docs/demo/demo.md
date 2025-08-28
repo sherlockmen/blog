@@ -86,3 +86,7 @@ Introduction text for the FAQ page.
 
   Answer 2
 
+
+## 9 DRAWIO插件
+[file](../file/client.drawio ':include :type=code')
+
