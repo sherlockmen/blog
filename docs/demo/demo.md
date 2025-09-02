@@ -3,7 +3,7 @@
 ## 1 Xmind 预览插件
 
 ```xmind preview 
-./test.xmind
+./demo/test.xmind
 ```
 /blog/docs/file/test.xmind
 
