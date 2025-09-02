@@ -55,7 +55,7 @@ Ciao!
 
 ## 6 图片滑块插件
 
-[]: # [[slider]](./image/icon.jpg|./image/openai-sdk-images/client.png)
+[[slider]](./image/icon.jpg|./image/openai-sdk-images/client.png)
 
 
 ## 7 防X帖子样式插件
