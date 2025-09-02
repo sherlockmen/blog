@@ -5,7 +5,6 @@
 ```xmind preview 
 ./file/test.xmind
 ```
-/blog/docs/file/test.xmind
 
 ## 2 图片放缩预览插件
 ![pic](../image/openai-sdk-images/client.png )
