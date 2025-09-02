@@ -3,7 +3,7 @@
 ## 1 Xmind 预览插件
 
 ```xmind preview 
-../file/test.xmind
+/docs/file/test.xmind
 ```
 
 ## 2 图片放缩预览插件
@@ -56,6 +56,7 @@ Ciao!
 [[slider]](../image/icon.jpg|../image/openai-sdk-images/client.png)
 
 ## 7 防X帖子样式插件
+
 <!-- x:start -->
 <!-- avatarUrl:'https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_400x400.jpg' -->
 <!-- imageUrl:'https://pbs.twimg.com/media/GobIp2wX0AE9zOp?format=jpg&name=small' -->
