@@ -3,7 +3,7 @@
 ## 1 Xmind 预览插件
 
 ```xmind preview 
-./demo/test.xmind
+./file/test.xmind
 ```
 /blog/docs/file/test.xmind
 
@@ -90,5 +90,5 @@ Introduction text for the FAQ page.
 
 
 ## 9 DRAWIO插件
-[file](../file/client.drawio ':include :type=code')
+[file](client.drawio ':include :type=code')
 
