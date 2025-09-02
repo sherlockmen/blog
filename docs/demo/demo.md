@@ -90,5 +90,5 @@ Introduction text for the FAQ page.
 
 
 ## 9 DRAWIO插件
-[file](client.drawio ':include :type=code')
+[file](../file/client.drawio ':include :type=code')
 
