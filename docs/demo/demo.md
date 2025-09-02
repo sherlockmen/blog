@@ -4,7 +4,7 @@
 
 ```xmind preview 
 
-docs/demo/test.xmind
+./test.xmind
 ```
 /blog/docs/file/test.xmind
 
