@@ -1,12 +1,20 @@
 # 软考中级-软件设计师
 ## 1 计算机组成原理
+
+>[!NOTE]
+> 根据考试大纲，本章只是主要涉及`单选题`，预计是**6**分
+
+```xmind preview 
+./file/software-certify/middleLevel/计算机系统知识.xmind
+```
+
 ### 1.1 计算机体系结构
-#### 1.1.1 计算机体系结构发展  
+#### 1.1.1 计算机体系结构发展
 
 - 计算机体系结构的分类
 
 ```xmind preview 
-./file/classification_of_computer_architectures.xmind
+./file/software-certify/middleLevel/classification_of_computer_architectures.xmind
 ```
 
 - 指令系统
