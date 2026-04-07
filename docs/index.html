@@ -35,9 +35,9 @@
         coverpage: true,
         loadNavbar: false,
         loadSidebar: true,
-        subMaxLevel: 4,
+        subMaxLevel: 5,
         // 发生产的时候要加上这个
-        basePath: '/blog/',
+        // basePath: '/blog/',
         count: {
             countable: true,
             fontsize: '0.9em',
@@ -102,7 +102,6 @@
             formatUpdated: "{YYYY}年{MM}月{DD}日-{HH}:{mm}:{ss}",
             whereToPlace: "top",
         },
-        // busuanzi: true,
         slider: {
             auto: true,
             intervalTime: 20000,
@@ -116,6 +115,8 @@
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 <!--java语法高亮-->
 <script src="//cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-java.min.js"></script>
+<!--Python语法高亮-->
+<script src="https://unpkg.com/prismjs/components/prism-python.min.js"></script>
 <!--count-->
 <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 <!--搜索插件-->

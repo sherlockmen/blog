@@ -1,5 +1,18 @@
 * 大模型应用开发
   * [open-ai](open-ai/openai.md)
+  * [claude-code](claude-code/claudecode.md)
+  * [langchain](langchain/langchain.md)
+  * [langgraph](langgraph/langgraph.md)
+* Java基础知识
+  * [java](java/java.md)
+* 算法
+* 项目总结
+  * [审单定责智能体](project-summary/smartworkorder.md)
+  * [客户服务系统](project-summary/customerservice.md)
+  * [RPA](project-summary/rpa.md)
+  * [认证](project-summary/certify.md)
+  * [投诉平台](project-summary/complaints.md)
+  * [集团大模型](project-summary/groupbigmodel.md)
 * 认证考试
   * [中级](software-certify/certify-middleLevel.md)
 * 插件样例

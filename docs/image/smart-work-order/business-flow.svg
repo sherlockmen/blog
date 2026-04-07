@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="620" viewBox="0 0 1560 620">
+  <style>
+    .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #0f172a; }
+    .subtitle { font: 18px 'Helvetica Neue', Arial, sans-serif; fill: #475569; }
+    .node { fill: #f8fafc; stroke: #334155; stroke-width: 2.2; rx: 12; ry: 12; }
+    .decision { fill: #fff7ed; stroke: #c2410c; stroke-width: 2.2; }
+    .text { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #111827; }
+    .sub { font: 16px 'Helvetica Neue', Arial, sans-serif; fill: #334155; }
+    .line { stroke: #475569; stroke-width: 3; marker-end: url(#arrow); fill: none; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="1560" height="620" fill="#ffffff"/>
+
+  <text x="40" y="52" class="title">主业务流程图</text>
+  <text x="40" y="84" class="subtitle">智能判责可信则直接进入确认，不可信则进入人工审核链路；申辩、释放、退回、取回会触发回退</text>
+
+  <rect x="40" y="250" width="150" height="74" class="node"/>
+  <text x="85" y="295" class="text">导入工单</text>
+
+  <rect x="250" y="250" width="150" height="74" class="node"/>
+  <text x="295" y="295" class="text">待补充</text>
+
+  <rect x="460" y="250" width="170" height="74" class="node"/>
+  <text x="505" y="295" class="text">智能判责</text>
+
+  <polygon points="740,224 840,287 740,350 640,287" class="decision"/>
+  <text x="688" y="282" class="text">模型是否可信</text>
+
+  <rect x="950" y="120" width="160" height="74" class="node"/>
+  <text x="998" y="165" class="text">待确认</text>
+
+  <rect x="950" y="390" width="160" height="74" class="node"/>
+  <text x="998" y="435" class="text">待分配</text>
+
+  <rect x="1170" y="250" width="160" height="74" class="node"/>
+  <text x="1218" y="295" class="text">待审核</text>
+
+  <rect x="1170" y="390" width="160" height="74" class="node"/>
+  <text x="1218" y="435" class="text">待复核</text>
+
+  <polygon points="1420,224 1520,287 1420,350 1320,287" class="decision"/>
+  <text x="1368" y="282" class="text">是否申辩</text>
+
+  <rect x="1335" y="100" width="160" height="74" class="node"/>
+  <text x="1384" y="145" class="text">已确认</text>
+
+  <rect x="1335" y="480" width="160" height="74" class="node"/>
+  <text x="1397" y="525" class="text">归档</text>
+
+  <path d="M190 287 L250 287" class="line"/>
+  <path d="M400 287 L460 287" class="line"/>
+  <path d="M630 287 L640 287" class="line"/>
+
+  <path d="M840 255 L900 255 L900 157 L950 157" class="line"/>
+  <path d="M840 319 L900 319 L900 427 L950 427" class="line"/>
+
+  <path d="M1110 427 L1140 427 L1140 287 L1170 287" class="line"/>
+  <path d="M1110 427 L1170 427" class="line"/>
+
+  <path d="M1330 287 L1320 287" class="line"/>
+  <path d="M1330 427 L1360 427 L1360 318 L1420 318" class="line"/>
+
+  <path d="M1520 255 L1540 255 L1540 137 L1495 137" class="line"/>
+  <path d="M1520 319 L1540 319 L1540 517 L1495 517" class="line"/>
+
+  <path d="M1420 350 L1420 410 L1030 410 L1030 390" class="line"/>
+
+  <text x="965" y="108" class="sub">可信直接进入待确认</text>
+  <text x="960" y="494" class="sub">不可信进入人工处理链路</text>
+  <text x="930" y="590" class="sub">申辩 / 释放 / 退回 / 取回 会让流程回退到前序节点</text>
+</svg>
