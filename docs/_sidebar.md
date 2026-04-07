@@ -6,6 +6,7 @@
 * Java基础知识
   * [java](java/java.md)
 * 算法
+  * [算法复杂度分析](algorithm/algorithm-complexity-analysis.md)
 * 项目总结
   * [审单定责智能体](project-summary/smartworkorder.md)
   * [客户服务系统](project-summary/customerservice.md)

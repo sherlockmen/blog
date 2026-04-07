@@ -93,3 +93,30 @@ Introduction text for the FAQ page.
 ## 9 DRAWIO插件
 [file](../file/client.drawio ':include :type=code')
 
+## 10 Python Tutor 示例
+
+<!-- tabs:start -->
+
+#### **Python**
+
+```pytutor-python
+x = 1
+y = 2
+z = x + y
+print(z)
+```
+
+#### **Java**
+
+```pytutor-java
+public class Main {
+    public static void main(String[] args) {
+        int a = 3;
+        int b = 4;
+        int c = a + b;
+        System.out.println(c);
+    }
+}
+```
+
+<!-- tabs:end -->

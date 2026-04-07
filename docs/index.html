@@ -16,14 +16,212 @@
     <!--xmind预览样式-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/AntHubTC/docsify-xmind@1.0/example/dist/index.min.css"/>
     <!--frontawesome样式-->
-    <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css" />
-    <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
-    <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/regular.css" />
-    <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/solid.css" />
+    <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css"/>
+    <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/brands.css"/>
+    <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/regular.css"/>
+    <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/solid.css"/>
     <!--可折叠插件样式-->
     <link rel="stylesheet" href="//unpkg.com/docsify-accordion/src/style.css">
     <!--首页dashboard样式-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-dashboard@3.1.0/dist/dashboard.min.css">
+    <style>
+        :root {
+            --pt-bg: #f8fafc;
+            --pt-card-bg: #ffffff;
+            --pt-border: #e6ebf2;
+            --pt-border-hover: #d7e0ea;
+            --pt-text: #1f2937;
+            --pt-subtext: #6b7280;
+            --pt-primary: #2563eb;
+            --pt-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+            --pt-shadow-hover: 0 10px 28px rgba(15, 23, 42, 0.10);
+            --pt-radius: 16px;
+            --pt-inner-radius: 12px;
+        }
+
+        /* docsify 内容区不要太宽，不然会显得 iframe 右边空很多 */
+        .markdown-section {
+            max-width: 1100px;
+        }
+
+        /* 外层卡片 */
+        .pytutor-wrapper {
+            margin: 20px 0 28px;
+            padding: 16px;
+            background: linear-gradient(180deg, #fcfdff 0%, #f8fafc 100%);
+            border: 1px solid var(--pt-border);
+            border-radius: var(--pt-radius);
+            box-shadow: var(--pt-shadow);
+            transition: all 0.2s ease;
+            overflow: hidden;
+        }
+
+        .pytutor-wrapper:hover {
+            border-color: var(--pt-border-hover);
+            box-shadow: var(--pt-shadow-hover);
+        }
+
+        /* 顶部工具栏 */
+        .pytutor-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 14px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--pt-border);
+        }
+
+        /* 标题 */
+        .pytutor-toolbar .lang-badge,
+        .pytutor-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--pt-text);
+            line-height: 1.2;
+            letter-spacing: 0.2px;
+        }
+
+        /* 按钮 */
+        .pytutor-toolbar button,
+        .pytutor-wrapper .copy-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 34px;
+            padding: 0 14px;
+            border: 1px solid #d7dee8;
+            border-radius: 8px;
+            background: #fff;
+            color: #374151;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+        }
+
+        .pytutor-toolbar button:hover,
+        .pytutor-wrapper .copy-btn:hover {
+            border-color: #c8d3df;
+            background: #f8fafc;
+            color: var(--pt-primary);
+        }
+
+        .pytutor-toolbar button:active,
+        .pytutor-wrapper .copy-btn:active {
+            transform: translateY(1px);
+        }
+
+        /* iframe 外层可选容器 */
+        .pytutor-frame-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 关键：让 iframe 不要过宽、不过高，尽量自适应 */
+        .pytutor-wrapper iframe {
+            display: block;
+            width: 100%;
+            max-width: 960px;         /* 限制最大宽度，避免右侧大空白 */
+            margin: 0 auto;           /* 居中 */
+            border: 1px solid var(--pt-border);
+            border-radius: var(--pt-inner-radius);
+            background: var(--pt-card-bg);
+            box-sizing: border-box;
+            overflow: hidden;
+
+            /* 关键自适应比例，减少底部和右侧空白 */
+            aspect-ratio: 2.35 / 1;
+
+            /* 给一个兜底高度范围 */
+            min-height: 400px;
+            max-height: 500px;
+            height: auto;
+        }
+
+        /* 底部说明 */
+        .pytutor-note {
+            margin-top: 12px;
+            padding-left: 2px;
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--pt-subtext);
+        }
+
+        /* 如果你有单独的正文容器，可以顺带统一 */
+        .pytutor-body {
+            display: block;
+        }
+
+        /* 代码说明、辅助文字 */
+        .pytutor-desc {
+            margin-top: 8px;
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--pt-subtext);
+        }
+
+        /* 小屏适配 */
+        @media (max-width: 992px) {
+            .markdown-section {
+                max-width: 100%;
+            }
+
+            .pytutor-wrapper iframe {
+                max-width: 100%;
+                aspect-ratio: 2.1 / 1;
+                min-height: 380px;
+                max-height: 460px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pytutor-wrapper {
+                padding: 12px;
+                border-radius: 14px;
+            }
+
+            .pytutor-toolbar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .pytutor-toolbar .lang-badge,
+            .pytutor-title {
+                font-size: 16px;
+            }
+
+            .pytutor-wrapper iframe {
+                max-width: 100%;
+                aspect-ratio: 1.6 / 1;
+                min-height: 340px;
+                max-height: 420px;
+                border-radius: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pytutor-wrapper {
+                padding: 10px;
+                margin: 16px 0 22px;
+            }
+
+            .pytutor-wrapper iframe {
+                aspect-ratio: 1.35 / 1;
+                min-height: 300px;
+                max-height: 380px;
+            }
+
+            .pytutor-toolbar button,
+            .pytutor-wrapper .copy-btn {
+                height: 32px;
+                padding: 0 12px;
+                font-size: 13px;
+            }
+        }
+    </style>
 </head>
 <body>
 <div id="app">loading...</div>
@@ -106,7 +304,16 @@
             auto: true,
             intervalTime: 20000,
             hideToolbar: true,
-        }
+        },
+        plugins: [
+            function (hook, vm) {
+                hook.doneEach(function () {
+                    if (window.renderPyTutorBlocks) {
+                        window.renderPyTutorBlocks();
+                    }
+                });
+            }
+        ]
     }
 </script>
 <!-- Docsify v4 -->
@@ -161,6 +368,8 @@
 <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
 <!--drawio插件-->
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+
+<script src="./_plugins/docsify-pytutor.js"></script>
 <script src='//cdn.jsdelivr.net/npm/drawcsify@latest'></script>
 </body>
 </html>
