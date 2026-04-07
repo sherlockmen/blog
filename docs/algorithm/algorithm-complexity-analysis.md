@@ -12,7 +12,7 @@ for 循环是最常见的迭代形式之一，`适合在预先知道迭代次数
 下面的函数基于`for`循环实现了求和`1 + 2 + ... + n`，求和结果使用变量 res 记录。需要注意的是，
 **Python**中`range(a, b)`对应的区间是“左闭右开”的，对应的遍历范围为`a, a+1, ... , b-1`：
 
-```python
+```pytutor-python
 def for_loop(n: int) -> int:
     """for 循环"""
     res = 0
@@ -21,4 +21,9 @@ def for_loop(n: int) -> int:
     for i in range(1, n + 1):
         res += i
     return res
+    
+if __name__ == "__main__":
+    n = 5
+    res = for_loop(n)
+    print(f"\nfor循环的求和结果 res = {res}")
 ```
