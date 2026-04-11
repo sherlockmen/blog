@@ -37,7 +37,7 @@
         loadSidebar: true,
         subMaxLevel: 5,
         // 发生产的时候要加上这个
-        basePath: '/blog/',
+        // basePath: '/blog/',
         count: {
             countable: true,
             fontsize: '0.9em',
@@ -108,28 +108,9 @@
             hideToolbar: true,
         },
         pytutor: {
-            baseEmbedUrl: 'https://pythontutor.com/iframe-embed.html',
-            defaultOptions: {
-                cumulative: 'false',
-                curInstr: '0',
-                heapPrimitives: 'nevernest',
-                drawParentPointers: 'false',
-                textReferences: 'false',
-                showOnlyOutputs: 'false'
-            },
-            ui: {
-                copyButtonText: '复制代码',
-                copiedButtonText: '已复制',
-                copyFailedText: '复制失败',
-                showNote: false,
-                noteText: '说明：适合小段教学示例代码，不适合复杂项目代码。',
-                maxWidth: '960px',
-                baseHeight: 420,
-                lineHeight: 24,
-                minHeight: 420,
-                maxHeight: 900,
-                mobileMinHeight: 360
-            }
+            heightPreset: 'comfortable',
+            showExpandButton: true,
+            autoplayInterval: 900
         }
     }
 </script>
@@ -186,7 +167,7 @@
 <!--drawio插件-->
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/sherlockmen/docsify-pytutor@v1.0.0/dist/docsify-pytutor.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sherlockmen/docsify-pytutor@v2.0.1/dist/docsify-pytutor.js"></script>
 <script src='//cdn.jsdelivr.net/npm/drawcsify@latest'></script>
 </body>
 </html>
